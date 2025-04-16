@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.Honest Supermarket</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/f.logo.png" type="image/png">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <header class="sticky-top bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#home">
+                    <img src="images/f.logo.png" alt="N.Honest Supermarket Logo" width="40" height="40" class="me-2">
+                    <span class="fw-bold text-warning">N.Honest Supermarket</span>
+                </a>
+
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Our Collections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex me-3">
+                        <input type="text" placeholder="Search products..." id="search-input" class="form-control me-2">
+                        <button id="search-btn" class="btn btn-warning">Search</button>
+                    </form>
+
+                    <!-- Cart Icon -->
+                    <div class="cart-icon ms-3">
+                        <a href="#cart" class="text-white text-decoration-none">
+                            <i class="fas fa-shopping-cart fa-lg"></i> 
+                            <span id="cart-count" class="badge bg-warning text-dark rounded-pill ms-1">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to N.Honest Supermarket</h1>
+            <p>Your one-stop shop for the latest in fashion.</p>
+        </div>
+    </div>
+
+    
+<!-- Home Section -->
+<section id="home" class="py-5">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="text-center mb-4">Our Collections</h2>
+        <p class="text-center lead mb-5">Explore our wide range of fashion products categorized for your convenience.</p>
+
+        <!-- Categories Grid -->
+        <div class="row gy-4">
+            <!-- Category: Men's Fashion -->
+            <div class="col-md-4">
+                <a href="portforio.html" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/men/men.png" alt="Men's Fashion" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Men's Fashion</h5>
+                            <p class="card-text">Explore stylish clothing and accessories for men.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category: Women's Fashion -->
+            <div class="col-md-4">
+                <a href="#women-fashion" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/women/women.png" alt="Women's Fashion" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Women's Fashion</h5>
+                            <p class="card-text">Discover trendy outfits and accessories for women.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category: Kids' Fashion -->
+            <div class="col-md-4">
+                <a href="portforio.html" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/kids/kids.png" alt="Kids' Fashion" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Kids' Fashion</h5>
+                            <p class="card-text">Find adorable clothing and accessories for kids.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category: Shoes -->
+            <div class="col-md-4">
+                <a href="portforio.html" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/shoes/shoes.png" alt="Shoes" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Shoes</h5>
+                            <p class="card-text">Step into style with our latest collection of shoes.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category: Watches -->
+            <div class="col-md-4">
+                <a href="portforio.html" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/watches/watches.png" alt="Watches" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Watches</h5>
+                            <p class="card-text">Elevate your style with our premium watch collection.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Category: Bags -->
+            <div class="col-md-4">
+                <a href="portforio.html" class="category-card text-decoration-none">
+                    <div class="card shadow rounded overflow-hidden text-center h-100">
+                        <img src="images/bags/bags.png" alt="Bags" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Bags</h5>
+                            <p class="card-text">Carry your essentials in style with our bag collection.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100">Shop Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="text-center mb-4">About Us</h2>
+
+        <!-- Row Layout -->
+        <div class="row align-items-center">
+            <!-- Left Column: Shop Image -->
+            <div class="col-md-6">
+                <img src="images/shop.png" alt="N.Honest Supermarket" class="img-fluid rounded shadow-lg">
+            </div>
+
+            <!-- Right Column: Text Content -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <!-- Gold Frame for Introduction -->
+                <div class="gold-frame">
+                    <h3>Welcome to N.Honest Supermarket</h3>
+                </div>
+                <p>We are an international retailer and service supplier of classy fashion products, dedicated to enabling people to live meaningful and enjoyable lives by looking better. The more you look better, the more you gain respect and opportunities.</p>
+                <p>Our mission is to provide high-quality, affordable, and stylish clothing for men, women, and kids. We believe that fashion is not just about clothes but also about expressing your personality and confidence.</p>
+
+                <!-- Shop Owner Info -->
+                <div class="mt-4">
+                    <h4 class="mb-3">Meet the Founder</h4>
+                    <div class="d-flex align-items-center">
+                        <img src="images/owner.jpg" alt="Shop Owner" class="rounded-circle me-3" width="60" height="60">
+                        <div>
+                            <strong>SHAFFY</strong>
+                            <p class="mb-0">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Details -->
+                <div class="mt-4">
+                    <h4 class="mb-3">Our Location</h4>
+                    <p>We are located in Kigali, Rwanda, around Kigali Marriott Hotel. Visit us today!</p>
+                    <!-- Embedded Map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5345678901234!2d30.061915!3d-1.954321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5b6e7a8b9c5%3A0x3c6e5e5e5e5e5e5e!2sKigali%20Marriott%20Hotel!5e0!3m2!1sen!2srw!4v1690000000000!5m2!1sen!2srw" 
+                        width="100%" 
+                        height="200" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <!-- Title -->
+        <h2 class="text-center mb-4 text-primary">Get in Touch</h2>
+        <p class="text-center lead">We’d love to hear from you! Reach out via email, phone, or social media.</p>
+
+        <!-- Row Layout -->
+        <div class="row justify-content-center">
+            <!-- Left Column: Contact Information -->
+            <div class="col-md-6">
+                <div class="card shadow-lg p-4">
+                    <h4 class="mb-3 text-center">Contact Information</h4>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            Email: <a href="mailto:info@nhonestsupermarket.com" class="text-decoration-none">info@nhonestsupermarket.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2 text-primary"></i>
+                            Phone: <a href="tel:+250792030786" class="text-decoration-none">+250 792 030 786</a>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Follow Us:</strong>
+                            <div class="d-flex justify-content-center mt-2">
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/nhonestsupermarket" target="_blank" class="text-dark mx-2">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/+250792030786" target="_blank" class="text-success mx-2">
+                                    <i class="fab fa-whatsapp fa-2x"></i>
+                                </a>
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/nhonestsupermarket" target="_blank" class="text-primary mx-2">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                                <!-- Twitter -->
+                                <a href="https://twitter.com/nhonestsupermarket" target="_blank" class="text-info mx-2">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card shadow-lg p-4">
+                    <h4 class="mb-3 text-center">Send Us a Message</h4>
+                    <form>
+                        <!-- Name Field -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <!-- Message Field -->
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Enhanced Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- About Us Section -->
+            <div class="col-md-4">
+                <h5 class="text-warning mb-3">About Us</h5>
+                <p class="small">
+                    We are an international retailer of classy fashion products, dedicated to helping you look better and live better.
+                </p>
+                <div class="social-icons d-flex justify-content-start">
+                    <a href="https://www.instagram.com/nhonestsupermarket" target="_blank" class="text-warning me-3">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.facebook.com/nhonestsupermarket" target="_blank" class="text-warning me-3">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="https://twitter.com/nhonestsupermarket" target="_blank" class="text-warning me-3">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="https://wa.me/+250792030786" target="_blank" class="text-success me-3">
+                        <i class="fab fa-whatsapp fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@nhonestsupermarket" target="_blank" class="text-danger me-3">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5 class="text-warning mb-3">Quick Links</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#clothes" class="text-white text-decoration-none">Clothes & Watches</a></li>
+                    <li><a href="#shoes" class="text-white text-decoration-none">Shoes</a></li>
+                    <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="col-md-4">
+                <h5 class="text-warning mb-3">Contact Us</h5>
+                <ul class="list-unstyled small">
+                    <li><i class="fas fa-envelope me-2 text-warning"></i>Email: <a href="mailto:info@nhonestsupermarket.com" class="text-white text-decoration-none">info@nhonestsupermarket.com</a></li>
+                    <li><i class="fas fa-phone me-2 text-warning"></i>Phone: <a href="tel:+250792030786" class="text-white text-decoration-none">+250 792 030 786</a></li>
+                    <li><i class="fas fa-map-marker-alt me-2 text-warning"></i>Location: Kigali, Rwanda</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="text-center mt-4 border-top pt-4">
+        <p class="small mb-0">&copy; 2025 N.Honest Supermarket. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/script.js"></script>
