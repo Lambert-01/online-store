@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - N.Honest Supermarket</title>
+    <title>Bandana fashion boutique</title>
 
     
-    <link rel="icon" href="images/f.logo.png" type="image/png">
+    <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Icons -->
@@ -325,13 +325,14 @@
 </head>
 
 <body>
+
     <!-- Header with Navbar -->
     <header class="sticky-top bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand d-flex align-items-center" href="#home">
-                    <img src="images/f.logo.png" alt="N.Honest Supermarket Logo" width="40" height="40" class="me-2">
+                    <img src="images/logo.jpg" alt="N.Honest Supermarket Logo" width="40" height="40" class="me-2">
                     <span class="fw-bold text-warning">N.Honest Supermarket</span>
                 </a>
 
@@ -380,22 +381,22 @@
                 <div class="col-md-3">
                     <div class="product-card card h-100">
                         <div class="position-relative">
-                            <img src="images/men/jacket.png" alt="Men's Jacket" class="card-img-top">
+                            <img src="images/women/complete.jpg" alt="Suit (pantsuit)" class="card-img-top">
                             <span class="badge-overlay">Trending</span>
-                            <p class="price-overlay">RWF 25,000</p>
+                            <p class="price-overlay">RWF 80,000</p>
                             <div class="overlay">
                                 <div class="overlay-text">Click to View Details</div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Men's Jacket</h5>
-                            <p class="card-text">A stylish jacket for casual wear.</p>
+                            <h5 class="card-title">Suit (pantsuit)</h5>
+                            <p class="card-text">Formal, structured outfit.</p>
                             <div class="quantity-selector">
-                                <button onclick="changeQuantity('jacket', -1)">-</button>
-                                <input type="number" id="jacket-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('jacket', 1)">+</button>
+                                <button onclick="changeQuantity('Suits', -1)">-</button>
+                                <input type="number" id="suits-quantity" value="1" min="1" readonly>
+                                <button onclick="changeQuantity('suits', 1)">+</button>
                             </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Men\'s Jacket', 'jacket', 25000, 'images/men/jacket.png')">Add to Cart</button>
+                            <button class="btn btn-primary w-100" onclick="addToCart('women\'s Suit', 'suits', 80000, 'images/women/complete.jpg')">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -404,8 +405,8 @@
                 <div class="col-md-3">
                     <div class="product-card card h-100">
                         <div class="position-relative">
-                            <img src="images/women/image.png" alt="Women's Dress" class="card-img-top">
-                            <p class="price-overlay">RWF 35,000</p>
+                            <img src="images/women/complete1.jpg" alt="Women's Dress" class="card-img-top">
+                            <p class="price-overlay">RWF 80,000</p>
                             <div class="overlay">
                                 <div class="overlay-text">Click to View Details</div>
                             </div>
@@ -418,246 +419,250 @@
                                 <input type="number" id="dress-quantity" value="1" min="1" readonly>
                                 <button onclick="changeQuantity('dress', 1)">+</button>
                             </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Dress', 'dress', 35000, 'images/women/image.png')">Add to Cart</button>
+                            <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Dress', 'dress', 80000, 'images/women/complete1.jpg')">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 3: Kids' Fashion -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/kids/image.png" alt="Kids' Outfit" class="card-img-top">
-                            <span class="badge-overlay">New</span>
-                            <p class="price-overlay">RWF 15,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Kids' Outfit</h5>
-                            <p class="card-text">Adorable clothing for kids.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('outfit', -1)">-</button>
-                                <input type="number" id="outfit-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('outfit', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Kids\'s Outfit', 'outfit', 15000, 'images/kids/image.png')">Add to Cart</button>
+                <!-- Women's Dress 4 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress4.jpg" alt="Women's Cocktail Dress" class="card-img-top">
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Product 4: Shoes -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/shoes/image.png" alt="Sneakers" class="card-img-top">
-                            <p class="price-overlay">RWF 45,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Cocktail Dress</h5>
+                        <p class="card-text">Stylish dress for cocktail parties.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('cocktail-dress', -1)">-</button>
+                            <input type="number" id="cocktail-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('cocktail-dress', 1)">+</button>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sneakers</h5>
-                            <p class="card-text">Comfortable sneakers for everyday use.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('sneakers', -1)">-</button>
-                                <input type="number" id="sneakers-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('sneakers', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Sneakers', 'sneakers', 45000, 'images/shoes/image.png')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 5: Watches -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/watches/watch.jpg" alt="Classic Watch" class="card-img-top">
-                            <p class="price-overlay">RWF 50,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Watch</h5>
-                            <p class="card-text">A premium watch for formal occasions.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('watch', -1)">-</button>
-                                <input type="number" id="watch-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('watch', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Classic Watch', 'watch', 50000, 'images/watches/watch.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Products -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/men/tshirt.jpg" alt="Casual Shirt" class="card-img-top">
-                            <span class="badge-overlay">Best Seller</span>
-                            <p class="price-overlay">RWF 20,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Casual Shirt</h5>
-                            <p class="card-text">A comfortable shirt for everyday use.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('shirt', -1)">-</button>
-                                <input type="number" id="shirt-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('shirt', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Casual Shirt', 'shirt', 20000, 'images/men/tshirt.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/shoes/shoe.jpg" alt="Leather Belt" class="card-img-top">
-                            <p class="price-overlay">RWF 10,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Leather Belt</h5>
-                            <p class="card-text">A stylish leather belt for formal wear.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('belt', -1)">-</button>
-                                <input type="number" id="belt-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('belt', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Leather Belt', 'belt', 10000, 'images/shoes/shoe.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 6: Men's Fashion -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/men/jeans.jpg" alt="Men's Jeans" class="card-img-top">
-                            <span class="badge-overlay">Trending</span>
-                            <p class="price-overlay">RWF 30,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Men's Jeans</h5>
-                            <p class="card-text">Stylish jeans for a modern look.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('jeans', -1)">-</button>
-                                <input type="number" id="jeans-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('jeans', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Men\'s Jeans', 'jeans', 30000, 'images/men/jeans.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 7: Women's Fashion -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/women/top.jpg" alt="Women's Top" class="card-img-top">
-                            <p class="price-overlay">RWF 25,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Women's Top</h5>
-                            <p class="card-text">A trendy top for a fashionable look.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('top', -1)">-</button>
-                                <input type="number" id="top-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('top', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Top', 'top', 25000, 'images/women/top.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 8: Kids' Fashion -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/kids/hats.jpg" alt="Kids' Hat" class="card-img-top">
-                            <span class="badge-overlay">New</span>
-                            <p class="price-overlay">RWF 15,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Kids' Hat</h5>
-                            <p class="card-text">A cute hat for kids to stay stylish.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('hat', -1)">-</button>
-                                <input type="number" id="hat-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('hat', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Kids\'s Hat', 'hat', 15000, 'images/kids/hats.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 9: Shoes -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/shoes/boot.jpg" alt="Boots" class="card-img-top">
-                            <p class="price-overlay">RWF 40,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Boots</h5>
-                            <p class="card-text">Stylish boots for all seasons.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('boots', -1)">-</button>
-                                <input type="number" id="boots-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('boots', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Boots', 'boots', 40000, 'images/shoes/boot.jpg')">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 10: Watches -->
-                <div class="col-md-3">
-                    <div class="product-card card h-100">
-                        <div class="position-relative">
-                            <img src="images/kids/sport-watch.jpg" alt="Sports Watch" class="card-img-top">
-                            <p class="price-overlay">RWF 35,000</p>
-                            <div class="overlay">
-                                <div class="overlay-text">Click to View Details</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sports Watch</h5>
-                            <p class="card-text">A durable sports watch for an active lifestyle.</p>
-                            <div class="quantity-selector">
-                                <button onclick="changeQuantity('sports-watch', -1)">-</button>
-                                <input type="number" id="sports-watch-quantity" value="1" min="1" readonly>
-                                <button onclick="changeQuantity('sports-watch', 1)">+</button>
-                            </div>
-                            <button class="btn btn-primary w-100" onclick="addToCart('Sports Watch', 'sports-watch', 35000, 'images/kids/sport-watch.jpg')">Add to Cart</button>
-                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Cocktail Dress', 'cocktail-dress', 100000, 'images/women/dress4.jpg')">Add to Cart</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+                <!-- Women's Dress 5 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress5.jpg" alt="Women's Designer Dress" class="card-img-top">
+                        <span class="badge-overlay">Best Seller</span>
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Designer Dress</h5>
+                        <p class="card-text">Premium designer dress for special occasions.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('designer-dress', -1)">-</button>
+                            <input type="number" id="designer-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('designer-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Designer Dress', 'designer-dress', 100000, 'images/women/dress5.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Women's Dress 6 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress6.jpg" alt="Women's Gala Dress" class="card-img-top">
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Gala Dress</h5>
+                        <p class="card-text">Elegant dress for gala events and ceremonies.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('gala-dress', -1)">-</button>
+                            <input type="number" id="gala-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('gala-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Gala Dress', 'gala-dress', 100000, 'images/women/dress6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+                <!-- Women's Complete Outfit 1 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/complete.jpg" alt="Women's Casual Outfit" class="card-img-top">
+                        <span class="badge-overlay">Trending</span>
+                        <p class="price-overlay">RWF 80,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Casual Outfit</h5>
+                        <p class="card-text">Complete casual outfit for everyday style.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('casual-outfit', -1)">-</button>
+                            <input type="number" id="casual-outfit-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('casual-outfit', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Casual Outfit', 'casual-outfit', 80000, 'images/women/complete.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Women's Dress 6 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress6.jpg" alt="Women's Gala Dress" class="card-img-top">
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Gala Dress</h5>
+                        <p class="card-text">Elegant dress for gala events and ceremonies.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('gala-dress', -1)">-</button>
+                            <input type="number" id="gala-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('gala-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Gala Dress', 'gala-dress', 100000, 'images/women/dress6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Product Grid -->
+        <div class="row gy-4">
+            <!-- Women's Dress 1 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress1.jpg" alt="Women's Elegant Dress" class="card-img-top">
+                        <span class="badge-overlay">Trending</span>
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Elegant Dress</h5>
+                        <p class="card-text">A luxurious dress for formal occasions.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('elegant-dress', -1)">-</button>
+                            <input type="number" id="elegant-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('elegant-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Elegant Dress', 'elegant-dress', 100000, 'images/women/dress1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Women's Dress 2 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress2.jpg" alt="Women's Summer Dress" class="card-img-top">
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Summer Dress</h5>
+                        <p class="card-text">A lightweight dress perfect for summer.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('summer-dress', -1)">-</button>
+                            <input type="number" id="summer-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('summer-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Summer Dress', 'summer-dress', 100000, 'images/women/dress2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Women's Dress 3 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress3.jpg" alt="Women's Evening Dress" class="card-img-top">
+                        <span class="badge-overlay">New</span>
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Evening Dress</h5>
+                        <p class="card-text">Sophisticated dress for evening events.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('evening-dress', -1)">-</button>
+                            <input type="number" id="evening-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('evening-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Evening Dress', 'evening-dress', 100000, 'images/women/dress3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Women's Dress 4 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress4.jpg" alt="Women's Cocktail Dress" class="card-img-top">
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Cocktail Dress</h5>
+                        <p class="card-text">Stylish dress for cocktail parties.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('cocktail-dress', -1)">-</button>
+                            <input type="number" id="cocktail-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('cocktail-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Cocktail Dress', 'cocktail-dress', 100000, 'images/women/dress4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Women's Dress 5 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress5.jpg" alt="Women's Designer Dress" class="card-img-top">
+                        <span class="badge-overlay">Best Seller</span>
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Designer Dress</h5>
+                        <p class="card-text">Premium designer dress for special occasions.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('designer-dress', -1)">-</button>
+                            <input type="number" id="designer-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('designer-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Designer Dress', 'designer-dress', 100000, 'images/women/dress5.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
     <!-- Shopping Cart Modal -->
     <div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -835,6 +840,7 @@
         </div>
     </div>
 
+
     <!-- Order Success Modal -->
     <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
@@ -868,7 +874,7 @@
         
         // Product Prices
         const prices = {
-            'jacket': 25000,
+            'suits': 80000,
             'dress': 35000,
             'outfit': 15000,
             'sneakers': 45000,
@@ -879,12 +885,29 @@
             'top': 25000,
             'hat': 15000,
             'boots': 40000,
-            'sports-watch': 35000
-        };
+            'sports-watch': 35000,
+            
+        // New women's dresses at 100,000 RWF
+            'elegant-dress': 100000,
+            'summer-dress': 100000,
+            'evening-dress': 100000,
+            'cocktail-dress': 100000,
+            'designer-dress': 100000,
+            'gala-dress': 100000,
+    
+    // New women's complete outfits at 80,000 RWF
+            'casual-outfit': 80000,
+            'business-outfit': 80000,
+            'weekend-outfit': 80000,
+            'autumn-outfit': 80000,
+            'urban-outfit': 80000,
+            'evening-ensemble': 80000,
+            'fashion-set': 80000
+        }; // Closing the prices object
         
         // Product Images
         const images = {
-            'jacket': 'images/men/jacket.png',
+            'suits': 'images/women/complete.jpg',
             'dress': 'images/women/image.png',
             'outfit': 'images/kids/image.png',
             'sneakers': 'images/shoes/image.png',
@@ -895,7 +918,24 @@
             'top': 'images/women/top.jpg',
             'hat': 'images/kids/hats.jpg',
             'boots': 'images/shoes/boot.jpg',
-            'sports-watch': 'images/kids/sport-watch.jpg'
+            'sports-watch': 'images/kids/sport-watch.jpg',
+
+            // New women's dresses
+            'elegant-dress': 'images/women/dress1.jpg',
+            'summer-dress': 'images/women/dress2.jpg',
+            'evening-dress': 'images/women/dress3.jpg',
+             'cocktail-dress': 'images/women/dress4.jpg',
+             'designer-dress': 'images/women/dress5.jpg',
+             'gala-dress': 'images/women/dress6.jpg',
+    
+    // New women's complete outfits
+            'casual-outfit': 'images/women/complete.jpg',
+           'business-outfit': 'images/women/complete1.jpg',
+            'weekend-outfit': 'images/women/complete3.jpg',
+            'autumn-outfit': 'images/women/complete4.jpg',
+            'urban-outfit': 'images/women/complete5.jpg',
+             'evening-ensemble': 'images/women/complete6.jpg',
+             'fashion-set': 'images/women/complete7.jpg'
         };
 
         // Initialize cart from localStorage if exists
