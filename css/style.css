@@ -289,6 +289,7 @@ h2 {
     margin-bottom: 30px;
     color: #f0c14b; /* Gold color for "About Us" heading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align the heading */
     animation: fadeInUp 1s ease-in-out; /* Animation for heading */
 }
 
@@ -296,6 +297,7 @@ h2 {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
+    margin-bottom: 20px;
     animation: fadeIn 1s ease-in-out; /* Animation for paragraphs */
 }
 
@@ -308,24 +310,66 @@ h2 {
     background-color: rgba(240, 193, 75, 0.1); /* Light gold background */
     margin-bottom: 20px;
     animation: slideInLeft 1s ease-in-out; /* Animation for gold frame */
+    text-align: center; /* Center align text inside the frame */
 }
 
 .gold-frame h3 {
     color: #f0c14b; /* Gold text inside the frame */
     margin: 0;
+    font-size: 1.5rem; /* Slightly larger font size */
 }
 
-/* Owner Info */
-#about .rounded-circle {
-    border: 2px solid #f0c14b; /* Golden border for the owner's image */
+/* Founder Card Styling */
+#about .card {
+    border: 2px solid #f0c14b; /* Golden border for the card */
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     transition: transform 0.3s ease-in-out; /* Hover effect */
+    animation: fadeIn 1s ease-in-out; /* Animation for card */
 }
 
-#about .rounded-circle:hover {
+#about .card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+#about .card-body {
+    padding: 50px; /* Add padding inside the card */
+}
+
+/* Square Image for Founder */
+#about .square-image {
+    border: 2px solid #f0c14b; /* Golden border for the founder's image */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensure width and height are equal for a square */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+#about .square-image:hover {
     transform: scale(1.1); /* Slightly enlarge the image on hover */
 }
 
-/* Map Styling */
+/* Social Media Icons */
+#about .fa-instagram,
+#about .fa-linkedin-in,
+#about .fa-phone-alt,
+#about .fa-envelope {
+    font-size: 1.5rem; /* Larger icon size */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+#about .fa-instagram:hover,
+#about .fa-linkedin-in:hover,
+#about .fa-phone-alt:hover,
+#about .fa-envelope:hover {
+    transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Location Details */
+#about .mt-4 h4 {
+    margin-bottom: 15px; /* Adjust spacing for location heading */
+}
+
 #about iframe {
     border-radius: 10px; /* Rounded corners for the map */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
@@ -347,7 +391,9 @@ h2 {
     from { opacity: 0; transform: translateX(-20px); }
     to { opacity: 1; transform: translateX(0); }
 }
-/* Contact Section Styling */
+
+
+
 #contact {
     padding: 60px 0;
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Subtle gradient background */
