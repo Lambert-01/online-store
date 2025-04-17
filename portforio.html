@@ -332,8 +332,8 @@
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand d-flex align-items-center" href="#home">
-                    <img src="images/logo.jpg" alt="N.Honest Supermarket Logo" width="40" height="40" class="me-2">
-                    <span class="fw-bold text-warning">N.Honest Supermarket</span>
+                    <img src="images/logo.jpg" alt="Bandana fashion boutique Logo" width="40" height="40" class="me-2">
+                    <span class="fw-bold text-warning">Bandana fashion boutique</span>
                 </a>
 
                 <!-- Toggle Button for Mobile -->
@@ -539,7 +539,32 @@
                 </div>
             </div>
 
+            <!-- Women's Dress 3 -->
+            <div class="col-md-3">
+                <div class="product-card card h-100">
+                    <div class="position-relative">
+                        <img src="images/women/dress3.jpg" alt="Women's Evening Dress" class="card-img-top">
+                        <span class="badge-overlay">New</span>
+                        <p class="price-overlay">RWF 100,000</p>
+                        <div class="overlay">
+                            <div class="overlay-text">Click to View Details</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Evening Dress</h5>
+                        <p class="card-text">Sophisticated dress for evening events.</p>
+                        <div class="quantity-selector">
+                            <button onclick="changeQuantity('evening-dress', -1)">-</button>
+                            <input type="number" id="evening-dress-quantity" value="1" min="1" readonly>
+                            <button onclick="changeQuantity('evening-dress', 1)">+</button>
+                        </div>
+                        <button class="btn btn-primary w-100" onclick="addToCart('Women\'s Evening Dress', 'evening-dress', 100000, 'images/women/dress3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
 
+
+           
                 <!-- Product Grid -->
         <div class="row gy-4">
             <!-- Women's Dress 1 -->
